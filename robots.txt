@@ -1,0 +1,5 @@
+User-Agent:*
+Disallow: /
+Allow: /
+Host:http://FindYourself.testsite55.ru/
+Sitemap:http://FindYourself.testsite55.ru/sitemap.xml

@@ -1,0 +1,650 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+img {
+    vertical-align: top;
+}
+body{
+    background-color: #fff;
+}
+.wrapper {
+    min-height: 100%;
+}
+._container {
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 50px 20px;
+}
+.parallax {
+    min-height: 100vh;
+}
+.parallax__body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.parallax__container {
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+}
+.parallax__label {
+color: #000;
+display: flex;
+font-size: 45px;
+letter-spacing: 6px;
+margin: 0px 0px 30px 0px;
+align-items: center;
+}
+.parallax__label::before {
+    flex: 0 0 70px;
+    content: "";
+    margin: 0px 30px 0px 0px;
+    background-color: #000;
+    height: 1px;
+}
+.parallax__title {
+    font-size: 50px;
+    font-family: "Chequeblack";
+    padding-left: 34%;
+    padding-right: 0%;
+    padding-top: 10%;
+}
+.parallax__images {
+position: absolute;
+width: 120%;
+height: 120%;
+top: -10%;
+left: -10%;
+z-index: 1;
+}
+.images-parallax__item {
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+}
+.images-parallax__fon,
+.images-parallax__two,
+.images-parallax__one {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+.images-parallax__fon {
+background: url("fon.png") top / cover no-repeat ;
+top: 8%;
+z-index: 2;
+}
+.images-parallax__two {
+    background: url("two.png") top / cover no-repeat ;
+    top:-1%;
+    z-index: 2;
+}
+.images-parallax__one {
+    background: url("one.png") top / cover no-repeat ;
+    top:-3%;
+    z-index: 3;
+}
+@media (max-aspect-ratio: 3/2) {
+    .images-parallax__one{
+        background-position: 20% top;
+    }
+}
+
+
+
+.content {
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+}
+.content::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    transform: translate(0ps, -100%);
+    background: linear-gradient(180deg, #353333);
+}
+
+
+#zagolovok {
+    width: 100%;
+    height: 45%;
+    background-image: url("fon.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+
+#textzagalovok {
+    padding-top: 5%;
+    padding-left: 30%;
+    padding-right: 25%;
+    font-size: 60px;
+    color: #FFFFFF;
+    font-family: "Chequeblack";
+    position: fixed;
+}
+
+
+
+
+
+#perenos {
+    width: 25%;
+    padding-top: 100%;
+}
+
+
+#osnovnoe {
+    width: 100%;
+    height: 19000px;
+    background-color: #FFF;
+    position: absolute;
+    top: 45%;
+    left: 0%;
+}
+
+
+#soderjanie {
+    width: 100%;
+    height: auto;
+    background-color: #353333;
+    margin-top: 4%;
+}
+
+
+#vvedenie {
+    font-size: 25px;
+    font-family: 'Baufra';
+    padding-left: 13%;
+    padding-right: 14%;
+    padding-top: 3%;
+}
+
+
+#img {
+    float: left;
+    padding-left: 13%;
+    padding-right: 0.5%;
+    margin-right: 0.4%;
+}
+
+
+#aftor {
+    font-family:'Baufra';
+    font-size: 17px;
+    padding-top: 0.6%;
+    font-weight: bold;
+}
+
+
+#soderzag {
+    font-size: 48px;
+    color: #FFFFFF;
+    font-family: "Chequeblack";
+    padding-left: 13%;
+    padding-right: 13%;
+    padding-top: 4%;
+}
+
+
+#sodertext {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Baufra';
+    padding-left: 13%;
+    padding-right: 13%;
+    padding-bottom: 5%;
+    padding-top: 1%;
+}
+
+
+a {
+    position: relative;
+    display: block;
+   width: 100%;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    font-family: 'Baufra';
+}
+
+a:before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background: #fff;
+    left: 0;
+    bottom: 0;
+    transition: .8s;
+    transform: scale(0);
+    transform-origin: left;
+}
+
+
+a:hover:before {
+transform: scale(1);
+width: 100%;
+}
+
+
+.break {
+    padding-top: 1%;
+}
+
+
+#podpunktcenter {
+    font-family: "Chequeblack"; 
+    font-size: 35px;
+    padding-left: 20%;
+    padding-right: 20%;
+	padding-top: 8%;
+}
+
+
+#podpunktcenter span{
+    display: inline;
+	background-color: #f777a6;
+	box-shadow: -10px 0 0 #f777a6, 10px 0 0 #f777a6;
+	padding: 5px 0;
+	color: #FFF;
+	font-size: 40px;
+}
+
+
+#infocenter {
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 20px;
+    font-family: 'Baufra';
+    padding-top: 2%;
+    font-weight: bold;
+}
+
+
+.h3 {
+    font-family: "Chequeblack"; 
+    font-size: 35px;
+    padding-bottom: 5%;
+}
+
+
+.inforight span{
+    display: inline;
+	background-color: #f777a6;
+	box-shadow: -1px 0 0 #f777a6, 1px 0 0 #f777a6;
+	padding: 0px 0;
+	color: #FFF;
+	font-size: 35px;
+}
+
+
+
+.infoleft {
+	width: 47%;
+    font-size: 18px;
+    font-family: 'Baufra';
+	float: left;
+	margin-left:10%;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-bottom: 5%;
+    font-weight: bold;
+}
+
+.infoleft span{
+    display: inline;
+	background-color: #f777a6;
+	box-shadow: -1px 0 0 #f777a6, 1px 0 0 #f777a6;
+	padding: 0px 0;
+	color: #FFF;
+	font-size: 35px;
+    font-weight: bold;
+}
+
+
+.inforight {
+    width: 36%;
+    font-size: 18px;
+    font-family: 'Baufra';
+	margin-left: 50%;
+    padding-top: 5%;
+    font-weight: bold;
+ 
+}
+.inforight span{
+    display: inline;
+	background-color: #f777a6;
+	box-shadow: -1px 0 0 #f777a6, 1px 0 0 #f777a6;
+	padding: 0px 0;
+	color: #FFF;
+	font-size: 35px;
+}
+
+
+.imgleft {
+	width: auto;
+    padding-top: 6%;
+	float: left;
+    padding-left: 20%;
+    
+   
+}
+.imgleft1 {
+	width: auto;
+    padding-top: 5%;
+	float: left;
+    padding-left: 20%;
+}
+
+
+.imgright {
+	width: 50%;
+	margin-left: 50%;
+	padding-top: 8%;
+    padding-left:16%;
+}
+.imgright1 {
+	width: 50%;
+	margin-left: 50%;
+	padding-top: 14%;
+    padding-left:16%;
+}
+
+
+#para { 
+	clear: left;
+}
+
+
+#podpunktcenter3 {
+    font-family: "Chequeblack"; 
+    font-size: 35px;
+    padding-left: 23%;
+    padding-right: 23%;
+	padding-top: 7%;
+    padding-bottom: 2%;
+    color:#fff;
+}
+#podpunktcenter3 span {
+	display: inline;
+	background-color: #f777a6;
+	box-shadow: -10px 0 0 #f777a6, 10px 0 0 #f777a6;
+	padding: 5px 0;
+	color: #FFFFFF;
+	font-size: 40px;
+}
+
+
+#podpunktcenter2 {
+    font-family: "Chequeblack"; 
+    font-size: 35px;
+    padding-left: 23%;
+    padding-right: 23%;
+	padding-top: 3%;
+    padding-bottom: 1.2%;
+    color:rgb(252, 240, 240);
+}
+#infocenter2 {
+    padding-left: 23%;
+    padding-right: 23%;
+    padding-bottom: 2%;
+    font-size: 18px;
+    font-family: 'Baufra';
+    color:rgb(252, 240, 240);
+}
+
+
+#podpunktcenter4 {
+    font-family: "Chequeblack"; 
+    font-size: 35px;
+    padding-left: 23%;
+    padding-right: 23%;
+	padding-top: 6%;
+    color:#000;
+    padding-bottom: 2%;
+}
+#infocenter4 {
+    padding-left: 23%;
+    padding-right: 23%;
+    font-size: 18px;
+    font-family: 'Baufra';
+    color:#000;
+    font-weight: bold;
+}
+#podpunktcenter4 span {
+	display: inline;
+	background-color: #f777a6;
+	box-shadow: -10px 0 0 #f777a6, 10px 0 0 #f777a6;
+	padding: 5px 0;
+	color: #FFFFFF;
+	font-size: 40px;
+    font-weight: bold;
+}
+
+#infocenter5 {
+    padding-left: 35%;
+    padding-right: 23%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Baufra';
+    color:#000;
+}
+
+
+#blackfon {
+    background-color: #353333;
+    margin-top: 7%;
+    padding-bottom: 5%;
+ 
+}
+
+
+#infocenterpink span {
+	display:block;
+	background-color: #f777a6;
+	box-shadow: 0px 0 0 #f777a6, 0px 0 0 #f777a6;
+	padding: 1px 0;
+	color: #FFFFFF;
+	font-size: 20px;
+    font-family:'Baufra';
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 23%;
+    margin-right: 23%;
+    
+}
+
+#line{
+    margin-left: 23%;
+    padding-right: 23%;
+}
+
+.hover-effect-cover {
+    list-style:none;
+    margin-left: 23%;
+    width: 77%;
+}
+
+.hover-effect-cover li {
+    position: relative;
+    max-width: 33.2%; /* Задаем ширину элемента списка с картинкой*/
+    display: inline-block;
+    background-color: #fff;
+    margin: 0;
+    border: 0px solid #fff;
+    box-shadow: 0px 0px 1px 0 rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+/* Заголовок, текст и ссылка */
+.hover-effect-cover li h3{
+    color: #fff;
+    margin: 5px;
+    font-family: 'Baufra' ;
+}
+.hover-effect-cover li p{
+    color: #fff;
+    margin: 5px;
+    font-family: 'Baufra' ;
+}
+.hover-effect-cover li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    color: #fff;
+    background: #000;
+    border-radius: 1px;
+    margin: 0 auto;
+    transition: all 0.4s ease-in-out;
+    text-align: center;
+    font-family: 'Baufra' ;
+
+}
+.hover-effect-cover li a:hover {
+    background: #353333;
+    color: #fff;
+}
+/* Выезжающий блок с текстом для панели слева направо */
+.hover-effect-cover li > div.effect-to-right {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+.hover-effect-cover li:hover > div.effect-to-right {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.hover-effect-cover li div.effect-to-right {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.671); /* Фон блока при наведении */
+    transition: all 0.7s ease-in-out;
+    color: #fff;
+    transform: translate(-250px, 0px) rotate(0deg); /* Направление выезжающей панели */
+}
+.hover-effect-cover li:hover div.effect-to-right {
+    opacity: 1;
+    transform: translate(0px, 0px) rotate(0deg);
+}
+
+.youtube1 {
+    padding-right: 10%;
+}
+.sites {
+    color:#000;
+}
+.sites:hover {
+    text-decoration:underline;
+    color: #f777a6;
+}
+#podpunktcenter6 {
+    font-family: "Chequeblack"; 
+    font-size: 35px;
+    padding-left: 23%;
+    padding-right: 23%;
+    padding-top: 4%;
+    color:#000;
+    padding-bottom: 2%;
+}
+.sites2 {
+    color:#000;
+    font-family: "Chequeblack";
+}
+.sites2:hover {
+    text-decoration:underline;
+    color: #f777a6;
+}
+@font-face {
+    font-family: "Chequeblack"; 
+    src: url("fonts/Chequeblack.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+
+    @font-face {
+        font-family: 'Baufra';
+        src: local('fonts/Baufra Regular'), local('Baufra-Regular'),
+            url('fonts/Baufra-Regular.woff2') format('woff2'),
+            url('fonts/Baufra-Regular.woff') format('woff'),
+            url('fonts/Baufra-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+      }
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    nav ul {
+        list-style: none;
+        background-color: rgba(0, 0, 0, 0.562);
+    }
+
+    nav > ul > li {
+        float: left;
+        
+    }
+     
+    nav ul::after {
+        content: "";
+        display: block;
+        clear:both;
+    }
+    nav ul li a {
+        display: inline-block;
+        padding: 12px;
+        text-decoration: none;
+        color: #FFF;
+        width: 100%;
+    }
+
+    nav ul li a:hover {
+        background-color: #353333 ;
+    }
+    nav ul ul {
+        display: none;
+        position: absolute;
+    }
+    nav ul li:hover ul{
+        display: block;
+    }
+    nav {
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
+    }
+    
+    
+
+
+::selection {background: #f777a6; color:#fff;}
+::-moz-selection {background: #353333; color:#fff;}
+::-webkit-selection {background: #353333; color:#fff;}
+    
+
+
